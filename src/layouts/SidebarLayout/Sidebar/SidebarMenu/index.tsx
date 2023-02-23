@@ -191,7 +191,6 @@ function SidebarMenu() {
                   <Button
                     className={currentRoute === '="/' ? 'active' : ''}
                     disableRipple
-                    component="a"
                     onClick={closeSidebar}
                     startIcon={<DesignServicesTwoToneIcon />}
                   >
@@ -219,7 +218,6 @@ function SidebarMenu() {
                       currentRoute === '/dashboards/crypto' ? 'active' : ''
                     }
                     disableRipple
-                    component="a"
                     onClick={closeSidebar}
                     startIcon={<BrightnessLowTwoToneIcon />}
                   >
@@ -234,7 +232,6 @@ function SidebarMenu() {
                       currentRoute === '/applications/messenger' ? 'active' : ''
                     }
                     disableRipple
-                    component="a"
                     onClick={closeSidebar}
                     startIcon={<MmsTwoToneIcon />}
                   >
@@ -264,7 +261,6 @@ function SidebarMenu() {
                         : ''
                     }
                     disableRipple
-                    component="a"
                     onClick={closeSidebar}
                     startIcon={<TableChartTwoToneIcon />}
                   >
@@ -292,7 +288,6 @@ function SidebarMenu() {
                       currentRoute === '/management/profile' ? 'active' : ''
                     }
                     disableRipple
-                    component="a"
                     onClick={closeSidebar}
                     startIcon={<AccountCircleTwoToneIcon />}
                   >
@@ -309,7 +304,6 @@ function SidebarMenu() {
                         : ''
                     }
                     disableRipple
-                    component="a"
                     onClick={closeSidebar}
                     startIcon={<DisplaySettingsTwoToneIcon />}
                   >
@@ -337,7 +331,6 @@ function SidebarMenu() {
                       currentRoute === '/components/buttons' ? 'active' : ''
                     }
                     disableRipple
-                    component="a"
                     onClick={closeSidebar}
                     startIcon={<BallotTwoToneIcon />}
                   >
@@ -352,7 +345,6 @@ function SidebarMenu() {
                       currentRoute === '/components/modals' ? 'active' : ''
                     }
                     disableRipple
-                    component="a"
                     onClick={closeSidebar}
                     startIcon={<BeachAccessTwoToneIcon />}
                   >
@@ -367,7 +359,6 @@ function SidebarMenu() {
                       currentRoute === '/components/accordions' ? 'active' : ''
                     }
                     disableRipple
-                    component="a"
                     onClick={closeSidebar}
                     startIcon={<EmojiEventsTwoToneIcon />}
                   >
@@ -382,7 +373,6 @@ function SidebarMenu() {
                       currentRoute === '/components/tabs' ? 'active' : ''
                     }
                     disableRipple
-                    component="a"
                     onClick={closeSidebar}
                     startIcon={<FilterVintageTwoToneIcon />}
                   >
@@ -397,7 +387,6 @@ function SidebarMenu() {
                       currentRoute === '/components/badges' ? 'active' : ''
                     }
                     disableRipple
-                    component="a"
                     onClick={closeSidebar}
                     startIcon={<HowToVoteTwoToneIcon />}
                   >
@@ -412,7 +401,6 @@ function SidebarMenu() {
                       currentRoute === '/components/tooltips' ? 'active' : ''
                     }
                     disableRipple
-                    component="a"
                     onClick={closeSidebar}
                     startIcon={<LocalPharmacyTwoToneIcon />}
                   >
@@ -427,7 +415,6 @@ function SidebarMenu() {
                       currentRoute === '/components/avatars' ? 'active' : ''
                     }
                     disableRipple
-                    component="a"
                     onClick={closeSidebar}
                     startIcon={<RedeemTwoToneIcon />}
                   >
@@ -442,7 +429,6 @@ function SidebarMenu() {
                       currentRoute === '/components/cards' ? 'active' : ''
                     }
                     disableRipple
-                    component="a"
                     onClick={closeSidebar}
                     startIcon={<SettingsTwoToneIcon />}
                   >
@@ -457,7 +443,6 @@ function SidebarMenu() {
                       currentRoute === '/components/forms' ? 'active' : ''
                     }
                     disableRipple
-                    component="a"
                     onClick={closeSidebar}
                     startIcon={<TrafficTwoToneIcon />}
                   >
@@ -483,7 +468,6 @@ function SidebarMenu() {
                   <Button
                     className={currentRoute === '/status/404' ? 'active' : ''}
                     disableRipple
-                    component="a"
                     onClick={closeSidebar}
                     startIcon={<CheckBoxTwoToneIcon />}
                   >
@@ -496,7 +480,6 @@ function SidebarMenu() {
                   <Button
                     className={currentRoute === '/status/500' ? 'active' : ''}
                     disableRipple
-                    component="a"
                     onClick={closeSidebar}
                     startIcon={<CameraFrontTwoToneIcon />}
                   >
@@ -511,7 +494,6 @@ function SidebarMenu() {
                       currentRoute === '/status/coming-soon' ? 'active' : ''
                     }
                     disableRipple
-                    component="a"
                     onClick={closeSidebar}
                     startIcon={<ChromeReaderModeTwoToneIcon />}
                   >
@@ -526,7 +508,6 @@ function SidebarMenu() {
                       currentRoute === '/status/maintenance' ? 'active' : ''
                     }
                     disableRipple
-                    component="a"
                     onClick={closeSidebar}
                     startIcon={<WorkspacePremiumTwoToneIcon />}
                   >

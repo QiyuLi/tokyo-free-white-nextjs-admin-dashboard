@@ -32,8 +32,9 @@ export const NextLinkComposed = React.forwardRef<
       shallow={shallow}
       passHref
       locale={locale}
+      ref={ref}
+      {...other}
     >
-      <Anchor ref={ref} {...other} />
     </NextLink>
   );
 });
