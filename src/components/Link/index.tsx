@@ -34,8 +34,7 @@ export const NextLinkComposed = React.forwardRef<
       locale={locale}
       ref={ref}
       {...other}
-    >
-    </NextLink>
+    ></NextLink>
   );
 });
 

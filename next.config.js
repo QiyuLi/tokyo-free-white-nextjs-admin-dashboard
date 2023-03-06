@@ -1,6 +1,12 @@
+/** @type {import('next').NextConfig} */
 const withImages = require('next-images');
+const { version } = require('./version.json');
 
-const redirects = {
+const nextConfig = {
+  reactStrictMode: true,
+  publicRuntimeConfig: {
+    version
+  },
   async redirects() {
     return [
       {
@@ -12,4 +18,4 @@ const redirects = {
   }
 };
 
-module.exports = withImages(redirects);
+module.exports = withImages(nextConfig);

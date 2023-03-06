@@ -1,3 +1,4 @@
+import getConfig from 'next/config';
 import {
   Box,
   Tooltip,
@@ -8,6 +9,9 @@ import {
   useTheme
 } from '@mui/material';
 import Link from 'src/components/Link';
+
+const { publicRuntimeConfig } = getConfig();
+const version = publicRuntimeConfig?.version;
 
 const LogoWrapper = styled(Link)(
   ({ theme }) => `
@@ -98,10 +102,7 @@ function Logo() {
   const theme = useTheme();
 
   return (
-    <TooltipWrapper
-      title="Tokyo Free White Next.js Typescript Admin Dashboard"
-      arrow
-    >
+    <TooltipWrapper title="DataBathing Dashboard" arrow>
       <LogoWrapper href="/">
         <Badge
           sx={{
@@ -113,7 +114,7 @@ function Logo() {
           }}
           overlap="circular"
           color="success"
-          badgeContent="1.0"
+          badgeContent={version}
         >
           <LogoSignWrapper>
             <LogoSign>

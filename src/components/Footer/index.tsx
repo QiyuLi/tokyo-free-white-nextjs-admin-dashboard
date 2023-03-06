@@ -1,4 +1,6 @@
-import { Box, Container, Link, Typography, styled } from '@mui/material';
+import { Box, Container, Typography, styled } from '@mui/material';
+
+const date = new Date();
 
 const FooterWrapper = styled(Container)(
   ({ theme }) => `
@@ -18,24 +20,9 @@ function Footer() {
       >
         <Box>
           <Typography variant="subtitle1">
-            &copy; 2022 - Tokyo Free White Next.js Typescript Admin Dashboard
+            &copy;{date.getFullYear()} - DataBathing Dashboard
           </Typography>
         </Box>
-        <Typography
-          sx={{
-            pt: { xs: 2, md: 0 }
-          }}
-          variant="subtitle1"
-        >
-          Crafted by{' '}
-          <Link
-            href="https://bloomui.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            BloomUI.com
-          </Link>
-        </Typography>
       </Box>
     </FooterWrapper>
   );

@@ -1,5 +1,9 @@
+import getConfig from 'next/config';
 import { Box, styled, Tooltip } from '@mui/material';
 import Link from 'src/components/Link';
+
+const { publicRuntimeConfig } = getConfig();
+const version = publicRuntimeConfig?.version;
 
 const LogoWrapper = styled(Link)(
   ({ theme }) => `
@@ -115,10 +119,10 @@ function Logo() {
         }}
       >
         <LogoTextWrapper>
-          <Tooltip title="Version 1.0" arrow placement="right">
-            <VersionBadge>1.0</VersionBadge>
+          <Tooltip title={`Version ${version}`} arrow placement="right">
+            <VersionBadge>{version}</VersionBadge>
           </Tooltip>
-          <LogoText>Tokyo Free White</LogoText>
+          <LogoText>DataBathing</LogoText>
         </LogoTextWrapper>
       </Box>
     </LogoWrapper>
